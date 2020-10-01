@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
     $('#fullpage').fullpage({
-        normalScrollElements: '#unscroll,.scroll-mb',anchors: ['firstPage1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+        normalScrollElements: '#unscroll,.scroll-mb,.box-benefit .tab-content .tab-pane .row',anchors: ['firstPage1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 
     });
 
