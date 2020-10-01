@@ -16,7 +16,9 @@ $(document).ready(function () {
     });
 
 
-    $('#fullpage').fullpage({normalScrollElements: '#unscroll',anchors: ['firstPage1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+    $('#fullpage').fullpage({
+        normalScrollElements: '#unscroll',anchors: ['firstPage1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+
     });
 
 

@@ -350,7 +350,7 @@
   .owl-stage-outer{
     padding: 10px 2px;
     @include mobile{
-      padding: 0 2px;
+      padding: 0;
     }
   }
 }
@@ -379,7 +379,9 @@
       height: 45px;
     }
     @include mobile{
-      display: none;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #aaaaaa;
     }
     &:hover{
       box-shadow: 0px 0px 15px rgba(0, 0, 0 ,0.21);
@@ -392,6 +394,9 @@
       }
       @include tablet{
         width: 18px;
+      }
+      @include mobile{
+        width: 14px;
       }
     }
   }
@@ -418,7 +423,9 @@
       height: 45px;
     }
     @include mobile{
-      display: none;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #aaaaaa;
     }
     &:hover{
       box-shadow: 0px 0px 15px rgba(0, 0, 0 ,0.21);
@@ -431,6 +438,9 @@
       }
       @include tablet{
         width: 18px;
+      }
+      @include mobile{
+        width: 14px;
       }
     }
   }
@@ -710,6 +720,13 @@ ul.list-interactive{
       margin-bottom: 20px;
     }
   }
+}
+.scroll-mb {
+  @include mobile{
+    height: 200px;
+    overflow-y: auto;
+  }
+
 }
 
 .section-info{

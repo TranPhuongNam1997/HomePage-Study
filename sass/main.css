@@ -518,7 +518,7 @@ select {
   padding: 10px 2px; }
   @media only screen and (max-width: 576px) {
     .slider-class .owl-stage-outer {
-      padding: 0 2px; } }
+      padding: 0; } }
 
 .block-slider-class {
   position: relative; }
@@ -546,7 +546,9 @@ select {
         height: 45px; } }
     @media only screen and (max-width: 576px) {
       .block-slider-class .btn-prev-class {
-        display: none; } }
+        width: 35px;
+        height: 35px;
+        border: 2px solid #aaaaaa; } }
     .block-slider-class .btn-prev-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
@@ -558,6 +560,9 @@ select {
       @media (max-width: 991px) {
         .block-slider-class .btn-prev-class img {
           width: 18px; } }
+      @media only screen and (max-width: 576px) {
+        .block-slider-class .btn-prev-class img {
+          width: 14px; } }
   .block-slider-class .btn-next-class {
     position: absolute;
     width: 60px;
@@ -582,7 +587,9 @@ select {
         height: 45px; } }
     @media only screen and (max-width: 576px) {
       .block-slider-class .btn-next-class {
-        display: none; } }
+        width: 35px;
+        height: 35px;
+        border: 2px solid #aaaaaa; } }
     .block-slider-class .btn-next-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
@@ -594,6 +601,9 @@ select {
       @media (max-width: 991px) {
         .block-slider-class .btn-next-class img {
           width: 18px; } }
+      @media only screen and (max-width: 576px) {
+        .block-slider-class .btn-next-class img {
+          width: 14px; } }
 
 .box-class {
   background: #FFFFFF;
@@ -821,6 +831,11 @@ ul.list-interactive li {
     @media only screen and (max-width: 767px) {
       .txt-info:last-child {
         margin-bottom: 20px; } }
+
+@media only screen and (max-width: 576px) {
+  .scroll-mb {
+    height: 200px;
+    overflow-y: auto; } }
 
 .section-info {
   background: url("../img/bg-sc3.png") no-repeat;
