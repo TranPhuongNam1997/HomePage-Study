@@ -708,6 +708,9 @@ ul.list-interactive{
 .section-info{
   background: url("../img/bg-sc3.png") no-repeat;
   background-size: 100% 100%;
+  @include tablet{
+    background-size: cover;
+  }
 }
 
 //--------------------------------------------------
@@ -788,6 +791,9 @@ ul.list-interactive{
 .section-benifit{
   background: url("../img/bg-sc-4.png") no-repeat;
   background-size: 100% 100%;
+  @include tablet{
+    background-size: cover;
+  }
 }
 .benifit-top{
   margin-bottom: 10px;

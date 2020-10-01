@@ -821,6 +821,9 @@ ul.list-interactive li {
 .section-info {
   background: url("../img/bg-sc3.png") no-repeat;
   background-size: 100% 100%; }
+  @media (max-width: 991px) {
+    .section-info {
+      background-size: cover; } }
 
 .title-benefit {
   margin-bottom: 63px; }
@@ -889,6 +892,9 @@ ul.list-interactive li {
 .section-benifit {
   background: url("../img/bg-sc-4.png") no-repeat;
   background-size: 100% 100%; }
+  @media (max-width: 991px) {
+    .section-benifit {
+      background-size: cover; } }
 
 .benifit-top {
   margin-bottom: 10px; }
