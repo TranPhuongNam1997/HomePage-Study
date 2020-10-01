@@ -544,6 +544,9 @@ select {
       .block-slider-class .btn-prev-class {
         width: 45px;
         height: 45px; } }
+    @media only screen and (max-width: 576px) {
+      .block-slider-class .btn-prev-class {
+        display: none; } }
     .block-slider-class .btn-prev-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
@@ -577,6 +580,9 @@ select {
       .block-slider-class .btn-next-class {
         width: 45px;
         height: 45px; } }
+    @media only screen and (max-width: 576px) {
+      .block-slider-class .btn-next-class {
+        display: none; } }
     .block-slider-class .btn-next-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
@@ -663,35 +669,33 @@ select {
 
 .list-lesson {
   height: 429px;
-  overflow-y: auto; }
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
   @media (max-width: 1367px) {
     .list-lesson {
       height: 384px; } }
   @media (max-width: 991px) {
     .list-lesson {
       height: 242px; } }
+  @media only screen and (max-width: 576px) {
+    .list-lesson {
+      height: 163px; } }
   .list-lesson::-webkit-scrollbar {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s; }
-  .list-lesson:hover {
-    /* Track */
-    /* Handle */
-    /* Handle on hover */ }
-    .list-lesson:hover::-webkit-scrollbar {
-      width: 5px;
-      border-radius: 10px;
-      opacity: 1;
-      visibility: visible;
-      transition: all 0.2s; }
-    .list-lesson:hover::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 10px; }
-    .list-lesson:hover::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 10px; }
-    .list-lesson:hover::-webkit-scrollbar-thumb:hover {
-      background: #555; }
+    display: none;
+    width: 5px;
+    border-radius: 10px; }
+  .list-lesson::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; }
+  .list-lesson::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; }
+  .list-lesson::-webkit-scrollbar-thumb:hover {
+    background: #555; }
+  .list-lesson:hover::-webkit-scrollbar {
+    display: block; }
   .list-lesson > li {
     display: block;
     border-bottom: 1px solid #404040;
@@ -879,6 +883,12 @@ ul.list-interactive li {
       padding: 8px 17px;
       font-size: 16px;
       line-height: 19px; } }
+  @media (max-width: 374px) {
+    .box-benefit .nav-tabs .nav-link {
+      padding: 8px 14px; } }
+  @media (max-width: 320px) {
+    .box-benefit .nav-tabs .nav-link {
+      padding: 8px; } }
   .box-benefit .nav-tabs .nav-link:hover {
     color: #1476C6;
     transition: all 0.2s; }

@@ -1,21 +1,6 @@
 
 $(document).ready(function () {
 
-    // go top
-    // $(".btn-scroll-top").click(function () {
-    //     $("html, body").animate({scrollTop: 0}, "slow");
-    //     return false;
-    // });
-
-
-    // $(window).scroll(function () {
-    //     if ($(window).scrollTop() >= 300) {
-    //         $('#go_top').show();
-    //     }
-    //     else {
-    //         $('#go_top').hide();
-    //     }
-    // });
     var overlay = $("<div class='overlay'></div>");
     $("body").prepend(overlay);
 
@@ -32,10 +17,6 @@ $(document).ready(function () {
 
 
     $('#fullpage').fullpage({normalScrollElements: '#unscroll',anchors: ['firstPage1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-
-        // scrollOverflow: true,
-
-        // offsetSections: true,
     });
 
 
