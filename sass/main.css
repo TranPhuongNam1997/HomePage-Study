@@ -845,6 +845,12 @@ ul.list-interactive li {
   border-radius: 16px; }
   .box-benefit .tab-content .tab-pane {
     min-height: 35vh; }
+    @media only screen and (max-width: 576px) {
+      .box-benefit .tab-content .tab-pane {
+        min-height: auto;
+        height: 364px;
+        overflow-y: auto;
+        padding-bottom: 15px; } }
   @media (max-width: 1367px) {
     .box-benefit .tab-content {
       padding: 30px 50px; } }
