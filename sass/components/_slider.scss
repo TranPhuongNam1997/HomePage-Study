@@ -1,0 +1,290 @@
+// ======================================================
+// Components :: Slider
+// ======================================================\
+//.slider {
+//  width: 50%;
+//  margin: 100px auto;
+//}
+//
+//.slick-slide {
+//  margin: 0px 20px;
+//}
+//
+//.slick-slide img {
+//  width: 100%;
+//}
+//
+//.slick-prev:before,
+//.slick-next:before {
+//  color: black;
+//}
+//
+//
+//.slick-slide {
+//  transition: all ease-in-out .3s;
+//  opacity: .2;
+//}
+//
+//.slick-active {
+//  opacity: .5;
+//}
+//
+//.slick-current {
+//  opacity: 1;
+//}
+
+
+
+.slick-slide img{
+  width: 100%;
+}
+.slick-featured-lectures  .item-lesson{
+  transform: scale(0.7);
+  @include mobile-horizontal{
+    transform: scale(1);
+  }
+}
+.slick-featured-lectures  .slick-slide{
+  margin: 0 -70px;
+  @include mobile-horizontal{
+    margin: 0;
+  }
+}
+
+.slick-featured-lectures .slick-active  .item-lesson{
+  transform: scale(1);
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s 0.2s linear;
+
+}
+.slick-featured-lectures .slick-list.draggable:before {
+  content: '';
+  background: $c-bll;
+  width: 14px;
+  height: calc(100% - 5px);
+  position: absolute;
+  left: -2px;
+  top: calc(50% - 1px);
+  transform: translateY(-50%) scale(0.7);
+  z-index: 9;
+  @include mobile-horizontal{
+    content: none;
+  }
+}
+.slick-featured-lectures .slick-list.draggable:after {
+
+  content: '';
+  background: $c-bll;
+  width: 14px;
+  height: calc(100% - 5px);
+  position: absolute;
+  right: -2px;
+  top: calc(50% - 1px);
+  transform: translateY(-50%) scale(0.7);
+  z-index: 9;
+  @include mobile-horizontal{
+    content: none;
+  }
+}
+
+.item-lesson {
+  border: 19px solid $c-bll;
+  @include mobile-horizontal{
+    border: none;
+  }
+}
+.slick-featured-lectures .slick-active .item-lesson{
+  border: none;
+}
+
+
+.slick-bs-course,.sc-course-watched{
+  .slick-prev {
+    left: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      left: 11px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-next{
+    right: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      right: 11px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+  }
+
+}
+
+
+
+
+.slick-featured-lectures{
+  .slick-prev {
+    left: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      left: 18px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-next{
+    right: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      right: 18px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+  }
+
+}
+.slick-text-research {
+  .slick-prev {
+    right: 1px;
+    left: auto;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 29px;
+      color: $c-bll;
+    }
+    @include tablet{
+      right: 15px;
+    }
+    @include mobile-horizontal{
+      right: 22px;
+    }
+  }
+  .slick-next{
+    right: -34px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 29px;
+      color: $c-bll;
+    }
+    @include tablet{
+      right: -15px;
+    }
+    @include mobile-horizontal{
+      right: -8px;
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 108%;
+    @include tablet{
+      top: 104%;
+    }
+    @include mobile-horizontal{
+      top: 96%;
+    }
+  }
+
+}
+
+.slick-research{
+  .slick-next,.slick-prev{
+    display: none!important;
+  }
+
+}
+.slider-nav{
+  .slick-prev, .slick-next{
+    display: none!important;
+  }
+}

@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="libs/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="libs/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/css/animate.min.css">
+    <link rel="stylesheet" href="libs/css/aos.css">
+
+    <link href="libs/css/jquery.fullPage.css" rel="stylesheet" />
+    <link href="libs/css/owl.carousel2.css" rel="stylesheet" />
+    <link href="libs/css/owl.theme2.css" rel="stylesheet" />
+
+
+    <link href="sass/main.css" rel="stylesheet" />
+
+
+    <script src="libs/js/jquery-3.5.1.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="libs/js/jquery.fullPage.min.js"></script>
+
+    <script src="libs/js/owl.carousel2.min.js"></script>
+
+    <script src="libs/js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="navigation">
+            <div class="logo-bars">
+                <a href="#"><img src="img/logo.svg" alt="img"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Khóa học</a></li>
+                <li><a href="#" class="menu-link">Đề thi</a></li>
+                <li><a href="#" class="menu-link">Game show</a></li>
+                <li><a href="#" class="menu-link">Tin tức</a></li>
+                <li><a href="#" class="menu-link">Hỗ trợ</a></li>
+                <li><a href="#" class="verification" data-ripple>Bạn là Giáo viên</a></li>
+            </ul>
+        </div>
+        <div class="container-fixed">
+            <button class="bars">
+                <img src="img/icon-bars.svg" alt="img">
+
+            </button>
+            <div class="logo">
+                <h1>
+                    <a href="#"><img src="img/logo.svg" alt="img"></a>
+                </h1>
+            </div>
+            <ul class="list-ulti">
+                <li><a href="#">Đăng ký</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="fullpage">
+
+        <div class="section section-banner">
+
+
+            <div class="container">
+                <ul class="list-search clearfix">
+                    <li>
+                        <label for="">Lớp</label>
+                        <select name="" id="selectclass">
+                            <option value="">Chọn chương trình học</option>
+                            <option value="">Lớp 1</option>
+                            <option value="">Lớp 2</option>
+                            <option value="">Lớp 3</option>
+                            <option value="">Lớp 4</option>
+                            <option value="">Lớp 5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">Môn học</label>
+                        <select name="" id="selectobject">
+                            <option value="">Chọn môn học</option>
+                            <option value="">Lớp 1</option>
+                            <option value="">Lớp 2</option>
+                            <option value="">Lớp 3</option>
+                            <option value="">Lớp 4</option>
+                            <option value="">Lớp 5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button class="btn-search" data-ripple><img src="img/icon-search.svg" alt="img"></button>
+                    </li>
+                </ul>
+
+                <h2 class="title-page">Bạn học <span>lớp nào?</span></h2>
+                <div class="block-slider-class">
+                    <button class="btn-prev-class"><img src="img/icon-prev.svg" alt="img"></button>
+                    <button class="btn-next-class"><img src="img/icon-next.svg" alt="img"></button>
+                    <div class="owl-carousel slider-class">
+                        <div class="item">
+                            <a href="#" class="box-class">
+                            <span class="name-class"><img src="img/class-8.svg" alt="img"> <span><img
+                                    src="img/class-8-sd.svg" alt="img"></span></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="box-class">
+                            <span class="name-class"><img src="img/class-9.svg" alt="img"> <span><img
+                                    src="img/class-9-sd.svg" alt="img"></span></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="box-class">
+                            <span class="name-class"><img src="img/class-10.svg" alt="img"> <span><img
+                                    src="img/class-10-sd.svg" alt="img"></span></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="box-class">
+                            <span class="name-class"><img src="img/class-11.svg" alt="img"> <span><img
+                                    src="img/class-11-sd.svg" alt="img"></span></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="box-class">
+                            <span class="name-class"><img src="img/class-12.svg" alt="img"> <span><img
+                                    src="img/class-12-sd.svg" alt="img"></span></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- end section-banner-->
+
+        <div class="section section-fetured-lecture">
+            <div class="container-main">
+                <h2 class="title-page title-reverse">Bài giảng <span>nổi bật</span></h2>
+                <div class="row-main">
+                    <div class="col-main-60">
+                        <img class="img-fetured" src="img/img-baigiang.png" alt="img">
+                    </div>
+                    <div class="col-main-40">
+                        <ul class="list-lesson" id="unscroll">
+                            <li>
+                                <a class="box-lesson" href="#">
+                                    <div class="img-icon-play"><img src="img/icon-play.svg" alt="img"></div>
+                                    <h3 class="name-lesson">Tìm căn bậc hai số học, tìm căn bậc hai của một số</h3>
+                                </a>
+                                <div class="view-interactive">
+                                    <div></div>
+                                    <div class="flex-between">
+                                        <ul class="list-interactive">
+                                            <li><img src="img/icon-heart.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-playx.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-share.svg" alt="img"><span>3,257</span></li>
+                                        </ul>
+                                        <div class="txt-dayup">2 ngày trước</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="box-lesson" href="#">
+                                    <div class="img-icon-play"><img src="img/icon-play.svg" alt="img"></div>
+                                    <h3 class="name-lesson">Tìm căn bậc hai số học, tìm căn bậc hai của một số</h3>
+                                </a>
+                                <div class="view-interactive">
+                                    <div></div>
+                                    <div class="flex-between">
+                                        <ul class="list-interactive">
+                                            <li><img src="img/icon-heart.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-playx.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-share.svg" alt="img"><span>3,257</span></li>
+                                        </ul>
+                                        <div class="txt-dayup">2 ngày trước</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="box-lesson" href="#">
+                                    <div class="img-icon-play"><img src="img/icon-play.svg" alt="img"></div>
+                                    <h3 class="name-lesson">Tìm căn bậc hai số học, tìm căn bậc hai của một số</h3>
+                                </a>
+                                <div class="view-interactive">
+                                    <div></div>
+                                    <div class="flex-between">
+                                        <ul class="list-interactive">
+                                            <li><img src="img/icon-heart.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-playx.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-share.svg" alt="img"><span>3,257</span></li>
+                                        </ul>
+                                        <div class="txt-dayup">2 ngày trước</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="box-lesson" href="#">
+                                    <div class="img-icon-play"><img src="img/icon-play.svg" alt="img"></div>
+                                    <h3 class="name-lesson">Tìm căn bậc hai số học, tìm căn bậc hai của một số</h3>
+                                </a>
+                                <div class="view-interactive">
+                                    <div></div>
+                                    <div class="flex-between">
+                                        <ul class="list-interactive">
+                                            <li><img src="img/icon-heart.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-playx.svg" alt="img"><span>3,257</span></li>
+                                            <li><img src="img/icon-share.svg" alt="img"><span>3,257</span></li>
+                                        </ul>
+                                        <div class="txt-dayup">2 ngày trước</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end section-fetured-lecture-->
+
+        <div class="section section-info">
+            <div class="container-main">
+                <div class="row-main">
+                    <div class="col-main-6">
+                        <div class="title-info"><span>Study365</span> là gì?</div>
+                        <p class="txt-info">Study365 là ứng dụng giáo dục trực tuyến trí tuệ nhân tạo (AI) hàng đầu Việt Nam với phương pháp học tập đổi mới cho phép học sinh được học tập, rèn luyện nhằm tăng hiệu quả, nâng cao kiến thức, tư duy học tập và tiết kiệm thời gian.</p>
+                        <p class="txt-info">
+                            Nhờ ứng dụng công nghệ vượt trội, Study365 còn cung cấp khả năng tổ chức giảng dạy trực tuyến giúp gia tăng tương tác giữa thầy cô và học sinh, đồng thời hỗ trợ phụ huynh theo dõi, đánh giá hiệu quả quá trình học tập của học sinh một cách chính xác và thiết thực nhất.
+                        </p>
+                        <p class="txt-info">
+                            Với đội ngũ cố vấn giáo viên, giáo sư nhiều năm kinh nghiệm giảng dạy tại các trường nổi tiếng, Study 365 đảm bảo cung cấp môi trường giáo dục vững chắc và tin cậy cho học sinh sẵn sàng đối mặt và vượt qua các kỳ thi.
+                        </p>
+
+                    </div>
+                    <div class="col-main-6">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3-KHfMqvifI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end section-info-->
+
+        <div class="section section-benifit">
+            <div class="container-benefit">
+                <h2 class="title-page title-reverse title-benefit">Bài giảng <span>nổi bật</span></h2>
+                <div class="box-benefit">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Học sinh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Giáo viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Phụ huynh</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active"><br>
+                            <div class="row">
+                                <div class="col-md-6 item-tab">
+                                    <div class="flex-center benifit-top">
+                                        <img src="img/icon-nangcao.svg" alt="img">
+                                        <h3 class="name-benefit">Nâng cao tư duy</h3>
+                                    </div>
+                                    <div class="sub-benifit">
+                                        <div></div>
+                                        <p>Hệ thống kiến thức bài giảng “mịn” và video sinh động giúp học sinh dễ dàng tiếp thu, rèn luyện kĩ năng và nâng cao kiến thức học tập.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-tab">
+                                    <div class="flex-center benifit-top">
+                                        <img src="img/icon-hoctap.svg" alt="img">
+                                        <h3 class="name-benefit">Nâng cao tư duy</h3>
+                                    </div>
+                                    <div class="sub-benifit">
+                                        <div></div>
+                                        <p>Hệ thống cung cấp nền tảng học tập trực tuyến đồng thời hỗ trợ giải đáp thắc mắc giúp các em ôn tập 24/7 mọi lúc mọi nơi.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-tab">
+                                    <div class="flex-center benifit-top">
+                                        <img src="img/icon-chudong.svg" alt="img">
+                                        <h3 class="name-benefit">Nâng cao tư duy</h3>
+                                    </div>
+                                    <div class="sub-benifit">
+                                        <div></div>
+                                        <p>Hỗ trợ học sinh tự tạo thời khóa biểu, lịch học cá nhân hoặc học nhóm ôn luyện phù hợp với bản thân. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-tab">
+                                    <div class="flex-center benifit-top">
+                                        <img src="img/icon-khenthuong.svg" alt="img">
+                                        <h3 class="name-benefit">Nâng cao tư duy</h3>
+                                    </div>
+                                    <div class="sub-benifit">
+                                        <div></div>
+                                        <p>Học vui mỗi ngày cùng Study365 với những phần thưởng và gameshow trí tuệ cực kì hấp dẫn khuyến khích tinh thần học tập.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                            <h3>Menu 1</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                            <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end section-benifit -->
+        <!--<div class="section"></div>-->
+
+
+    </div>
+    <button class="btn-flag">
+        <img src="img/icon-flag.png" alt="img">
+    </button>
+    <button class="btn-scroll-top">
+        <img src="img/icon-up.png" alt="img">
+    </button>
+
+<!--    <script type="text/javascript" src="libs/js/aos.js"></script>-->
+<!--    <script>AOS.init();</script>-->
+    <script type="text/javascript" src="libs/js/wow.js"></script>
+    <script> new WOW().init(); </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".slider-class").owlCarousel({
+                items: 5,
+                responsive: {
+                    1200: { item: 5, },// breakpoint from 1200 up
+                    992: { items: 4, },
+                    768: { items: 3, },
+                    577: { items: 2, },
+                    0: { items: 2, }
+                },
+
+                rewind: false,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                smartSpeed: 500, //slide speed smooth
+
+                dots: false,
+                dotsEach: false,
+                loop: true,
+                nav: true,
+                navText: ['', ''],
+                // navSpeed: 250, //slide speed when click button
+
+                autoWidth: false,
+                margin: 0,
+
+                lazyContent: false,
+                lazyLoad: false,
+
+                animateIn: false,
+                animateOut: false,
+
+                center: false,
+                URLhashListener: false,
+
+                video: false,
+                videoHeight: false,
+                videoWidth: false,
+            });
+        });
+        $(document).ready(function () {
+            var owl = $('.slider-class');
+            owl.owlCarousel();
+            // Go to the next item
+            $('.btn-next-class').click(function() {
+                owl.trigger('next.owl.carousel');
+            });
+            $('.btn-prev-class').click(function() {
+                owl.trigger('prev.owl.carousel');
+            });
+
+        });
+
+    </script>
+</body>
+</html>

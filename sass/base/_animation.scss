@@ -1,0 +1,28 @@
+// ======================================================
+// Base :: Animation
+// ======================================================
+
+
+.ripple {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  overflow: hidden;
+}
+.rippleWave{
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.7);
+  background: rgba(255,255,255, 1);
+  opacity: 0.45;
+  animation: ripple 2s forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(24);
+    opacity:0;
+  }
+}

@@ -1,0 +1,44 @@
+// ======================================================
+// Base :: Reset
+// ======================================================
+ul,ol{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  color: #606060;
+}
+a,a:hover,a:focus{
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+input,textarea{
+  //-webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+img{
+  max-width: 100%;
+}
+label{
+  margin-bottom: 0;
+}
+//button{
+//  outline: none;
+//  &:focus{
+//    outline: none;
+//  }
+//}
+form{
+  margin-bottom: 0;
+}
+video{
+  max-width: 100%;
+  width: 100%;
+}
+button:active{
+  outline: none!important;
+}
