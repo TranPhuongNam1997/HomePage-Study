@@ -722,10 +722,10 @@ ul.list-interactive{
   }
 }
 .scroll-mb {
-  @include mobile{
-    height: 200px;
-    overflow-y: auto;
-  }
+  //@include mobile{
+  //  height: 200px;
+  //  overflow-y: auto;
+  //}
 
 }
 

@@ -832,11 +832,6 @@ ul.list-interactive li {
       .txt-info:last-child {
         margin-bottom: 20px; } }
 
-@media only screen and (max-width: 576px) {
-  .scroll-mb {
-    height: 200px;
-    overflow-y: auto; } }
-
 .section-info {
   background: url("../img/bg-sc3.png") no-repeat;
   background-size: 100% 100%; }
