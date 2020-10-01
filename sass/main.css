@@ -271,6 +271,12 @@ select {
   top: 0;
   padding: 31px 0;
   z-index: 9; }
+  @media (max-width: 991px) {
+    .header {
+      padding: 20px 0; } }
+  @media only screen and (max-width: 767px) {
+    .header {
+      padding: 15px 0; } }
   .header .logo {
     position: absolute;
     top: 50%;
@@ -278,7 +284,7 @@ select {
     transform: translate(-50%, -50%); }
     .header .logo h1 {
       margin-bottom: 0; }
-      @media only screen and (max-width: 576px) {
+      @media (max-width: 991px) {
         .header .logo h1 img {
           width: 80px; } }
   .header .container-fixed {

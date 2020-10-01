@@ -57,6 +57,12 @@
   top: 0;
   padding: 31px 0;
   z-index: 9;
+  @include tablet{
+    padding: 20px 0;
+  }
+  @include mobile-horizontal{
+    padding: 15px 0;
+  }
   .logo{
     position: absolute;
     top: 50%;
@@ -65,7 +71,7 @@
     h1{
       margin-bottom: 0;
       img{
-        @include mobile{
+        @include tablet{
           width: 80px;
         }
       }
