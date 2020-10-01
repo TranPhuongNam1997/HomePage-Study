@@ -379,9 +379,7 @@
       height: 45px;
     }
     @include mobile{
-      width: 35px;
-      height: 35px;
-      border: 2px solid #aaaaaa;
+      display: none;
     }
     &:hover{
       box-shadow: 0px 0px 15px rgba(0, 0, 0 ,0.21);
@@ -423,9 +421,7 @@
       height: 45px;
     }
     @include mobile{
-      width: 35px;
-      height: 35px;
-      border: 2px solid #aaaaaa;
+      display: none;
     }
     &:hover{
       box-shadow: 0px 0px 15px rgba(0, 0, 0 ,0.21);

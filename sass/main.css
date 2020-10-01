@@ -546,9 +546,7 @@ select {
         height: 45px; } }
     @media only screen and (max-width: 576px) {
       .block-slider-class .btn-prev-class {
-        width: 35px;
-        height: 35px;
-        border: 2px solid #aaaaaa; } }
+        display: none; } }
     .block-slider-class .btn-prev-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
@@ -587,9 +585,7 @@ select {
         height: 45px; } }
     @media only screen and (max-width: 576px) {
       .block-slider-class .btn-next-class {
-        width: 35px;
-        height: 35px;
-        border: 2px solid #aaaaaa; } }
+        display: none; } }
     .block-slider-class .btn-next-class:hover {
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.21);
       transition: all 0.3s; }
