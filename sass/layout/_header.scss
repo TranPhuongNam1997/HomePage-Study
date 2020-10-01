@@ -718,10 +718,11 @@ ul.list-interactive{
   }
 }
 .scroll-mb {
-  //@include mobile{
-  //  height: 200px;
-  //  overflow-y: auto;
-  //}
+  @include mobile{
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
 
 }
 
@@ -748,11 +749,20 @@ ul.list-interactive{
     border-radius: 16px;
     .tab-pane{
       min-height: 35vh;
+      //@include mobile{
+      //  min-height: auto;
+      //  height: 364px;
+      //  overflow-y: auto;
+      //  padding-bottom: 15px;
+      //}
       @include mobile{
-        min-height: auto;
-        height: 364px;
-        overflow-y: auto;
         padding-bottom: 15px;
+      }
+      .row{
+        @include mobile{
+          max-height: 334px;
+          overflow-y: auto;
+        }
       }
     }
     @media (max-width: 1367px) {
@@ -897,6 +907,11 @@ ul.list-interactive{
 }
 .item-tab{
   margin-bottom: 20px;
+  @include mobile{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .btn-flag{

@@ -828,6 +828,12 @@ ul.list-interactive li {
       .txt-info:last-child {
         margin-bottom: 20px; } }
 
+@media only screen and (max-width: 576px) {
+  .scroll-mb {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px; } }
+
 .section-info {
   background: url("../img/bg-sc3.png") no-repeat;
   background-size: 100% 100%; }
@@ -847,10 +853,11 @@ ul.list-interactive li {
     min-height: 35vh; }
     @media only screen and (max-width: 576px) {
       .box-benefit .tab-content .tab-pane {
-        min-height: auto;
-        height: 364px;
-        overflow-y: auto;
         padding-bottom: 15px; } }
+    @media only screen and (max-width: 576px) {
+      .box-benefit .tab-content .tab-pane .row {
+        max-height: 334px;
+        overflow-y: auto; } }
   @media (max-width: 1367px) {
     .box-benefit .tab-content {
       padding: 30px 50px; } }
@@ -983,6 +990,9 @@ ul.list-interactive li {
 
 .item-tab {
   margin-bottom: 20px; }
+  @media only screen and (max-width: 576px) {
+    .item-tab:last-child {
+      margin-bottom: 0; } }
 
 .btn-flag {
   background: #FFFFFF;
